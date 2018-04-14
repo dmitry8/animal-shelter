@@ -1,0 +1,80 @@
+.page-header {
+  background-image: url(../img/noise-bg.png), linear-gradient(to right, rgba(79,66,59,1) 0%,rgba(25,25,25,1) 100%);
+  padding-top: 55px;
+}
+
+.page-header__wrapper {
+  background-image: url(../img/banner-bg@1x.png);
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: bottom right;
+  padding-bottom: 200px;
+}
+
+// ==================== Navigation ====================
+
+.page-header__nav {
+  display: flex;
+}
+
+.page-header__nav-list {
+  display: flex;
+  min-width: 550px;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.page-header__nav-item {
+  transition: all 2s;
+}
+
+.page-header__nav-link {
+  color: $gray-text;
+  padding: 5px;
+  padding-bottom: 10px;
+  position: relative;
+
+}
+
+.page-header__nav-link:hover {
+  border-bottom: 3px solid $contrast-color;
+
+  transition: all 0.2s;
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 3px;
+  //   border-radius: 1px;
+  //   background-color: $contrast-color;
+  //   bottom: 0;
+  //   left: 0;
+  // }
+}
+
+// ==================== Banner ====================
+
+.page-header__banner {
+  padding-top: 100px;
+}
+
+.page-header__banner-text-wrapper {
+  width: 470px;
+}
+
+.page-header__slogan {
+  font-size: 44px;
+  line-height: 57px;
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 35px;
+  // background-color: ;
+  font-family: Georgia; // доделать тут шрифт
+}
+
+.page-header__desc {
+  margin: 0;
+  margin-bottom: 45px;
+  color: $gray-text;
+}
+
