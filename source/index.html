@@ -63,33 +63,60 @@
     </section>
 
     <section class="pets">
-      <h2>
-        Our friends who are looking for a house
-      </h2>
+      <div class="container  pets__wrapper">
+        <h2 class="pets__title">
+          Our friends who are looking for a house
+        </h2>
 
-      <ul>
-        <li>
-          <img src="" alt="">
-          <h3>Katrine</h3>
-          <a href="#">Learn More</a>
-        </li>
-        <li>
-          <img src="" alt="">
-          <h3>Jennifer</h3>
-          <a href="#">Learn More</a>
-        </li>
-        <li>
-          <img src="" alt="">
-          <h3>Woody</h3>
-          <a href="#">Learn More</a>
-        </li>
-      </ul>
-      <button type="button">prev</button>
-      <button type="button">next</button>
+        <div class="pets__carusel">
+          <div class="pets__carusel-gallery">
+            <ul class="pets__list">
+              <li class="pets__item">
+                <img src="img/katrine@1x.jpg" srcset="img/katrine@2x.jpg 2x" width="270" height="270" alt="Cat Katrine">
+                <h3 class="pets__name">Katrine</h3>
+                <a class="pets__learn-more  button" href="#">Learn More</a>
+              </li>
+              <li class="pets__item">
+                <img src="img/jennifer@1x.jpg" srcset="img/jennifer@2x.jpg 2x" width="270" height="270" alt="Dog Jennifer">
+                <h3 class="pets__name">Jennifer</h3>
+                <a class="pets__learn-more  button" href="#">Learn More</a>
+              </li>
+              <li class="pets__item">
+                <img src="img/woody@1x.jpg" srcset="img/woody@2x.jpg 2x" width="270" height="270" alt="Dog Woody">
+                <h3 class="pets__name">Woody</h3>
+                <a class="pets__learn-more  button" href="#">Learn More</a>
+              </li>
+              <li class="pets__item">
+                <img src="img/katrine@1x.jpg" srcset="img/katrine@2x.jpg 2x" width="270" height="270" alt="Cat Katrine">
+                <h3 class="pets__name">Katrine</h3>
+                <a class="pets__learn-more  button" href="#">Learn More</a>
+              </li>
+              <li class="pets__item">
+                <img src="img/jennifer@1x.jpg" srcset="img/jennifer@2x.jpg 2x" width="270" height="270" alt="Dog Jennifer">
+                <h3 class="pets__name">Jennifer</h3>
+                <a class="pets__learn-more  button" href="#">Learn More</a>
+              </li>
+              <li class="pets__item">
+                <img src="img/woody@1x.jpg" srcset="img/woody@2x.jpg 2x" width="270" height="270" alt="Dog Woody">
+                <h3 class="pets__name">Woody</h3>
+                <a class="pets__learn-more  button" href="#">Learn More</a>
+              </li>
+            </ul>
 
-      <a href="#">
-        Get to know the rest
-      </a>
+            <button class="pets__button  pets__button--prev" type="button">
+              <span class="visually-hidden">prev</span>
+            </button>
+            <button class="pets__button  pets__button--next" type="button">
+              <span class="visually-hidden">next</span>
+            </button>
+          </div>
+        </div>
+
+
+        <a class="pets__more  button" href="#">
+          Get to know the rest
+        </a>
+      </div>
     </section>
 
     <section class="help">
@@ -172,5 +199,31 @@
 
     </section>
   </footer>
+    <script>
+    /* Carusel */
+    var width = 270; // ширина изображения
+    var count = 3; // количество изображений
+    var gutter = 150 // margin между карточками
+
+    var carousel = document.querySelector('.pets__carusel');
+    var list = carousel.querySelector('.pets__list');
+    var listElems = carousel.querySelectorAll('.pets__item');
+
+    var position = 0; // текущий сдвиг влево
+
+    carousel.querySelector('.pets__button--prev').onclick = function() {
+      // сдвиг влево
+      // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+      position = Math.min(position + width * count, 0)
+      list.style.marginLeft = position + 'px';
+    };
+
+    carousel.querySelector('.pets__button--next').onclick = function() {
+      // сдвиг вправо
+      // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+      position = Math.max(position - width * count, -width * (listElems.length - count));
+      list.style.marginLeft = position - gutter + 'px';
+    };
+  </script>
 </body>
 </html>
