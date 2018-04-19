@@ -9,6 +9,10 @@
   background-size: 700px;
   background-position: bottom right;
   padding-bottom: 200px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/banner-bg@2x.png);
+  }
 }
 
 // ==================== Navigation ====================
@@ -63,13 +67,13 @@
 }
 
 .page-header__slogan {
-  font-size: 44px;
+  width: 420px;
+  font-size: 45px;
   line-height: 57px;
   color: #ffffff;
   display: inline-block;
   margin-bottom: 35px;
-  // background-color: ;
-  font-family: Georgia; // доделать тут шрифт
+  font-weight: 300;
 }
 
 .page-header__desc {

@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Animal Shelter</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -49,17 +51,23 @@
 
   <main>
     <section class="about">
-      <h2>
-        About the shelter "Cozy House"
-      </h2>
+      <div class="container  about__wrapper">
+        <img class="about__pic" src="img/about-pets@1x.png" srcset="img/about-pets@2x.png 2x" width="300" height="408" alt="Cat and dog">
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nostrum est, harum saepe repellat cupiditate.
-      </p>
+        <div class="about__wrapper-text">
+          <h2 class="about__title">
+            About the shelter "Cozy House"
+          </h2>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil tenetur nam, eaque quia! Doloribus, quaerat nemo possimus quae harum ipsa nobis, eligendi fugit aliquam animi eum. Dolor repudiandae, unde ex.
-      </p>
+          <p class="about__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nostrum est, harum saepe repellat cupiditate.
+          </p>
+
+          <p class="about__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil tenetur nam, eaque quia! Doloribus, quaerat nemo possimus quae harum ipsa nobis, eligendi fugit aliquam animi eum. Dolor repudiandae, unde ex.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="pets">
@@ -120,83 +128,94 @@
     </section>
 
     <section class="help">
-      <h2>
-        Than you can help our shelter
-      </h2>
+      <div class="container  help__wrapper">
+        <h2 class="help__title">
+          Than you can help our shelter
+        </h2>
 
-      <ul>
-        <li>
-          <a href="#">Pet food</a>
-        </li>
-        <li>
-          <a href="#">Transportation</a>
-        </li>
-        <li>
-          <a href="#">Toys</a>
-        </li>
-        <li>
-          <a href="#">Bowls and cups</a>
-        </li>
-        <li>
-          <a href="#">Shampoos</a>
-        </li>
-        <li>
-          <a href="#">Vitamins</a>
-        </li>
-        <li>
-          <a href="#">Medicines</a>
-        </li>
-        <li>
-          <a href="#">Collars / leashes</a>
-        </li>
-        <li>
-          <a href="#">Sleeping area</a>
-        </li>
-      </ul>
+        <ul class="help__list">
+          <li class="help__item">
+            <a class="help__link" href="#">Pet food</a>
+          </li>
+          <li class="help__item">
+            <a class="help__link" href="#">Transportation</a>
+          </li>
+          <li class="help__item">
+            <a class="help__link" href="#">Toys</a>
+          </li>
+          <li class="help__item">
+            <a class="help__link" href="#">Bowls and cups</a>
+          </li>
+          <li class="help__item">
+            <a class="help__link" href="#">Shampoos</a>
+          </li>
+          <li class="help__item">
+            <a class="help__link" href="#">Vitamins</a>
+          </li>
+          <li class="help__item">
+            <a class="help__link" href="#">Medicines</a>
+          </li>
+          <li class="help__item">
+            <a class="help__link" href="#">Collars / leashes</a>
+          </li>
+          <li class="help__item">
+            <a class="help__link" href="#">Sleeping area</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="donation">
-      <h2>
-        In addition, you  can make a donation
-      </h2>
+      <div class="container  donation__wrapper">
+        <img class="donation__pic" src="img/donation-dog@1x.png" srcset="img/donation-dog@2x.png 2x" width="505" height="261" alt="Dog">
+        
+        <div class="donation__wrapper-text">
+          <h2 class="donation__title">
+            In addition, you  can make a donation
+          </h2>
 
-      <p>
-        Name of the bank / Type of bank account
-      </p>
-      <p>
-        8380 2880 8028 8791 7435
-      </p>
-      <p>
-        Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
-        ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
-        et malesuada fames ac ante ipsum primis in faucibus.
-      </p>
+          <p class="donation__name-bank">
+            Name of the bank / Type of bank account
+          </p>
+          <p class="donation__namber-bank">
+            8380 2880 8028 8791 7435
+          </p>
+          <p class="donation__description">
+            Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+            ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+            et malesuada fames ac ante ipsum primis in faucibus.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <section class="contacts">
-      <h3>
-        For questions and suggestions
-      </h3>
-      <p>
-        email@shelter.com
-      </p>
-      <p>
-        +13 674 567 75 54
-      </p>
+  <footer class="page-footer">
+    <section class="contacts  container">
+      <div class="contacts__wrapper-email">
+        <h3 class="contacts__title">
+          For questions and suggestions
+        </h3>
+        <p class="contacts__text">
+          email@shelter.com
+        </p>
+        <p class="contacts__text">
+          +13 674 567 75 54
+        </p>
+      </div>
 
-      <b>
-        We are waiting  for your visit
-      </b>
+      <div class="contacts__wrapper-address">  
+        <b class="contacts__title">
+          We are waiting  for your visit
+        </b>
 
-      <p>
-        Boston, Central Street, 1st (Entrance from the store)
-      </p>
-      <p>
-        London, South Park, 18st
-      </p>
-
+        <p class="contacts__text">
+          Boston, Central Street, 1st (Entrance from the store)
+        </p>
+        <p class="contacts__text">
+          London, South Park, 18st
+        </p>
+      </div>
     </section>
   </footer>
     <script>
