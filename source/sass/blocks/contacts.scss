@@ -37,7 +37,85 @@
 }
 
 .contacts__text {
+    position: relative;
     font-size: 20px;
     color: $contrast-color;
-    padding-left: 65px;
+    padding-left: 60px;
+}
+
+.contacts__text--address::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 38px;
+    top: 0;
+    left: 12px;
+    background-color: transparent;
+    background-image: url(../img/sprite@1x.png);
+    background-repeat: no-repeat;
+    background-position: -696px -14px;
+    background-size: 860px 80px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/sprite@2x.png);
+        width: 28px;
+        height: 43px;
+        background-position: -692px -15px;
+    }
+}
+
+.contacts__text--email {
+    padding-left: 70px;
+
+    a {
+        color: inherit;
+    }
+
+    &:hover a {
+        text-decoration: underline;
+    }
+}
+
+.contacts__text--tel {
+    padding-left: 70px;
+}
+
+.contacts__text--email::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 31px;
+    top: 0;
+    left: 12px;
+    background-color: transparent;
+    background-image: url(../img/sprite@1x.png);
+    background-repeat: no-repeat;
+    background-position: -637px -20px;
+    background-size: 860px 80px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/sprite@2x.png);
+        height: 33px;
+        background-position: -629px -28px;
+    }
+}
+
+.contacts__text--tel::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 34px;
+    top: 0;
+    left: 12px;
+    background-color: transparent;
+    background-image: url(../img/sprite@1x.png);
+    background-repeat: no-repeat;
+    background-position: -739px -16px;
+    background-size: 860px 80px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/sprite@2x.png);
+        height: 37px;
+        background-position: -735px -21px;
+    }
 }

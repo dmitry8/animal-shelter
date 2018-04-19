@@ -42,14 +42,35 @@
 }
 
 .donation__namber-bank {
-    // width: 320px;
+    position: relative;
     display: inline-block;
     margin: 0;
     margin-bottom: 15px;
     background-color: $contrast-color;
     padding: 11px;
     padding-left: 60px;
+    padding-right: 13px;
     border-radius: 10px;
     font-size: 20px;
     color: #292929;
+}
+
+.donation__namber-bank::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    top: 10px;
+    left: 12px;
+    background-color: transparent;
+    background-image: url(../img/sprite@1x.png);
+    background-repeat: no-repeat;
+    background-position: -792px -17px;
+    background-size: 860px 80px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/sprite@2x.png);
+        height: 27px;
+        background-position: -790px -29px;
+    }
 }
