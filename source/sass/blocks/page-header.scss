@@ -1,6 +1,11 @@
 .page-header {
   background-image: url(../img/noise-bg.png), linear-gradient(to right, rgba(79,66,59,1) 0%,rgba(25,25,25,1) 100%);
-  padding-top: 55px;
+  padding-top: 40px;
+}
+
+.page-header--pets {
+  background-image: none;
+  background-color: #fafafa;
 }
 
 .page-header__wrapper {
@@ -15,10 +20,16 @@
   }
 }
 
+.page-header__wrapper--pets {
+  background-image: none;
+  padding-bottom: 40px;
+}
+
 // ==================== Navigation ====================
 
 .page-header__nav {
   display: flex;
+  align-items:center
 }
 
 .page-header__nav-list {
@@ -37,7 +48,10 @@
   padding: 5px;
   padding-bottom: 10px;
   position: relative;
+}
 
+.page-header__na-link--pets {
+  color: #545454;
 }
 
 .page-header__nav-link:hover {
@@ -54,6 +68,10 @@
   //   bottom: 0;
   //   left: 0;
   // }
+}
+
+.page-header__nav-link--active {
+  border-bottom: 3px solid $contrast-color;
 }
 
 // ==================== Banner ====================

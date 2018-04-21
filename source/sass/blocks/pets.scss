@@ -138,3 +138,14 @@
 .pets__button--next .pets__wrapper-button::before {
   transform: rotate(180deg);
 }
+
+.pets__list--pets-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pets__item--pets-page {
+  margin-bottom: 25px;
+}

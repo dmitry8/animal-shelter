@@ -7,13 +7,14 @@
   <title>Animal Shelter</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="container">
         <nav class="page-header__nav">
           <div class="page-header__logo">
-            <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="">
+            <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="Cozy House. Shelter for pets in Boston">
           </div>
 
           <ul class="page-header__nav-list">
@@ -21,7 +22,7 @@
               <a class="page-header__nav-link" href="#">About the shelter</a>
             </li>
             <li class="page-header__nav-item">
-              <a class="page-header__nav-link" href="#">Our pets</a>
+              <a class="page-header__nav-link" href="pets.html">Our pets</a>
             </li>
             <li class="page-header__nav-item">
               <a class="page-header__nav-link" href="#">To help the shelter</a>
@@ -124,8 +125,7 @@
           </div>
         </div>
 
-
-        <a class="pets__more  button" href="#">
+        <a class="pets__more  button" href="pets.html">
           Get to know the rest
         </a>
       </div>
@@ -222,31 +222,53 @@
       </div>
     </section>
   </footer>
-    <script>
-    /* Carusel */
-    var width = 270; // ширина изображения
-    var count = 3; // количество изображений
-    var gutter = 150 // margin между карточками
 
-    var carousel = document.querySelector('.pets__carusel');
-    var list = carousel.querySelector('.pets__list');
-    var listElems = carousel.querySelectorAll('.pets__item');
-
-    var position = 0; // текущий сдвиг влево
-
-    carousel.querySelector('.pets__button--prev').onclick = function() {
-      // сдвиг влево
-      // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-      position = Math.min(position + width * count, 0)
-      list.style.marginLeft = position + 'px';
-    };
-
-    carousel.querySelector('.pets__button--next').onclick = function() {
-      // сдвиг вправо
-      // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-      position = Math.max(position - width * count, -width * (listElems.length - count));
-      list.style.marginLeft = position - gutter + 'px';
-    };
-  </script>
+  <section class="modal-pet  modal-pet__jennifer  modal-pet--close">
+    <img class="modal-pet__pic-dog" src="img/modal-jennifer@1x.jpg" srcset="img/modal-jennifer@2x.jpg 2x" width="470" alt="Jennifer">
+    <div class="modal-pet__wrapper">
+      <h3 class="modal-pet__name">Jennifer</h3>
+      <p class="modal-pet__breed">Pooch + Labrador</p>
+      <p class="modal-pet__desc">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum placeat tempore cupiditate fugit, sapiente quo, dolore recusandae delectus provident obcaecati quibusdam nemo. Doloremque consequuntur, dignissimos inventore quibusdam voluptatum consectetur tempora.
+      </p>
+      <ul class="modal-pet__charact">
+        <li class="modal-pet__charact-item">
+          <span>Age:</span> 2 months</li>
+        <li class="modal-pet__charact-item">
+          <span>Inculations:</span> none</li>
+        <li class="modal-pet__charact-item">
+          <span>Diseases:</span> none</li>
+        <li class="modal-pet__charact-item">
+          <span>Parasites:</span> none</li>
+      </ul>
+    </div>
+    <button class="modal-pet__button">
+      <span class="visually-hidden">Close</span>
+    </button>
+  </section>
+  <section class="modal-pet  modal-pet__jennifer  modal-pet--close">
+    <img class="modal-pet__pic-dog" src="img/katrine@1x.jpg" srcset="img/katrine@2x.jpg 2x" width="470" alt="Jennifer">
+    <div class="modal-pet__wrapper">
+      <h3 class="modal-pet__name">Jennifer</h3>
+      <p class="modal-pet__breed">Pooch + Labrador</p>
+      <p class="modal-pet__desc">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum placeat tempore cupiditate fugit, sapiente quo, dolore recusandae delectus provident obcaecati quibusdam nemo. Doloremque consequuntur, dignissimos inventore quibusdam voluptatum consectetur tempora.
+      </p>
+      <ul class="modal-pet__charact">
+        <li class="modal-pet__charact-item">
+          <span>Age:</span> 2 months</li>
+        <li class="modal-pet__charact-item">
+          <span>Inculations:</span> none</li>
+        <li class="modal-pet__charact-item">
+          <span>Diseases:</span> none</li>
+        <li class="modal-pet__charact-item">
+          <span>Parasites:</span> none</li>
+      </ul>
+    </div>
+    <button class="modal-pet__button">
+      <span class="visually-hidden">Close</span>
+    </button>
+  </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
