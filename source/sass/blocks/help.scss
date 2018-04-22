@@ -1,135 +1,135 @@
 .help {
-    padding-top: 80px;
-    padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 30px;
 }
 
 .help__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .help__title {
-    font-size: 35px;
-    line-height: 45px;
-    margin: 0;
-    width: 355px;
-    text-align: center;
-    margin-bottom: 60px;
-    font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  margin: 0;
+  width: 355px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 400;
 }
 
 .help__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .help__item {
-    margin-right: 50px;
-    text-align: center;
-    margin-bottom: 60px;
+  margin-right: 50px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .help__link {
-    position: relative;
-    font-size: 20px;
-    color: inherit;
-    display: block;
-    width: 170px;
-    padding: 10px;
-    padding-top: 90px;
-    border-radius: 10px;
-    transition: all 0.2s;
+  position: relative;
+  font-size: 20px;
+  color: inherit;
+  display: block;
+  width: 170px;
+  padding: 10px;
+  padding-top: 90px;
+  border-radius: 10px;
+  transition: all 0.2s;
 
-    &:hover {
-        transition: all 0.2s;
-        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
-    }
+  &:hover {
+    transition: all 0.2s;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+  }
 }
 
 .help__link::before {
-    content: "";
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    top: 5px;
-    left: 50%;
-    margin-left: -35px;
-    background-color: transparent;
-    background-image: url(../img/sprite@1x.png);
-    background-repeat: no-repeat;
-    background-position: -411px -4px;
-    background-size: 860px 80px;
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 5px;
+  left: 50%;
+  margin-left: -35px;
+  background-color: transparent;
+  background-image: url(../img/sprite@1x.png);
+  background-repeat: no-repeat;
+  background-position: -411px -4px;
+  background-size: 860px 80px;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url(../img/sprite@2x.png);
-        width: 69px;
-        height: 73px;
-        background-position: -403px -4px;
-    }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/sprite@2x.png);
+    width: 69px;
+    height: 73px;
+    background-position: -403px -4px;
+  }
 }
 
 .help__link--transportation::before {
-    background-position: -549px 0;
+  background-position: -549px 0;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        width: 72px;
-        background-position: -545px -4px;
-    }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    width: 72px;
+    background-position: -545px -4px;
+  }
 }
 
 .help__link--toys::before {
-    background-position: -476px 0;
+  background-position: -476px 0;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-position: -468px -3px;
-    }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-position: -468px -3px;
+  }
 }
 
 .help__link--bowls::before {
-    background-position: -347px 0;
+  background-position: -347px 0;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-position: -335px -2px;
-    }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-position: -335px -2px;
+  }
 }
 
 .help__link--shampoos::before {
-    width: 40px;
-    margin-left: -20px;
-    background-position: -67px 0;
+  width: 40px;
+  margin-left: -20px;
+  background-position: -67px 0;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-position: -67px -2px;
-    }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-position: -67px -2px;
+  }
 }
 
 .help__link--vitamins::before {
-    background-position: -120px 0;    
+  background-position: -120px 0;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-position: -114px -3px;
-    }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-position: -114px -3px;
+  }
 }
 
 .help__link--medicines::before {
-    background-position: -2px 0;
+  background-position: -2px 0;
 }
 
 .help__link--collars::before {
-    background-position: -197px 0;
+  background-position: -197px 0;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-position: -194px -3px;
-        width: 70px;
-    }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-position: -194px -3px;
+    width: 70px;
+  }
 }
 
 .help__link--sleeping::before {
-    background-position: -275px 0;
+  background-position: -275px 0;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-position: -267px -3px;
-    }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-position: -267px -3px;
+  }
 }

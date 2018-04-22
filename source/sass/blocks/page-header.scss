@@ -59,44 +59,43 @@
 
   transition: all 0.2s;
   // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 3px;
-  //   border-radius: 1px;
-  //   background-color: $contrast-color;
-  //   bottom: 0;
-  //   left: 0;
-  // }
-}
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 3px;
+    //   border-radius: 1px;
+    //   background-color: $contrast-color;
+    //   bottom: 0;
+    //   left: 0;
+    // }
+  }
 
-.page-header__nav-link--active {
-  border-bottom: 3px solid $contrast-color;
-}
+  .page-header__nav-link--active {
+    border-bottom: 3px solid $contrast-color;
+  }
 
-// ==================== Banner ====================
+  // ==================== Banner ====================
 
-.page-header__banner {
-  padding-top: 100px;
-}
+  .page-header__banner {
+    padding-top: 100px;
+  }
 
-.page-header__banner-text-wrapper {
-  width: 470px;
-}
+  .page-header__banner-text-wrapper {
+    width: 470px;
+  }
 
-.page-header__slogan {
-  width: 420px;
-  font-size: 45px;
-  line-height: 57px;
-  color: #ffffff;
-  display: inline-block;
-  margin-bottom: 35px;
-  font-weight: 300;
-}
+  .page-header__slogan {
+    width: 420px;
+    font-size: 45px;
+    line-height: 57px;
+    color: #ffffff;
+    display: inline-block;
+    margin-bottom: 35px;
+    font-weight: 300;
+  }
 
-.page-header__desc {
-  margin: 0;
-  margin-bottom: 45px;
-  color: $gray-text;
-}
-
+  .page-header__desc {
+    margin: 0;
+    margin-bottom: 45px;
+    color: $gray-text;
+  }

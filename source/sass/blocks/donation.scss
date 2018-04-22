@@ -1,76 +1,76 @@
 .donation {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: #f6f6f6;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f6f6f6;
 }
 
 .donation__wrapper {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .donation__pic {
-    align-self: flex-end;
-    width: 505px;
-    height: 261px;
-    margin-right: 70px;
+  align-self: flex-end;
+  width: 505px;
+  height: 261px;
+  margin-right: 70px;
 }
 
 .donation__wrapper-text {
-    width: 400px;    
-} 
+  width: 400px;
+}
 
 .donation__title {
-    font-size: 35px;
-    line-height: 45px;
-    margin: 0;
-    margin-bottom: 17px;
-    font-weight: 300;
+  font-size: 35px;
+  line-height: 45px;
+  margin: 0;
+  margin-bottom: 17px;
+  font-weight: 300;
 }
 
 .donation__description {
-    font-size: 12px;
-    line-height: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    color: #b2b2b2;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: #b2b2b2;
 }
 
 .donation__name-bank {
-    margin: 0;
-    margin-bottom: 8px;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .donation__namber-bank {
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    margin-bottom: 15px;
-    background-color: $contrast-color;
-    padding: 11px;
-    padding-left: 60px;
-    padding-right: 13px;
-    border-radius: 10px;
-    font-size: 20px;
-    color: #292929;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 15px;
+  background-color: $contrast-color;
+  padding: 11px;
+  padding-left: 60px;
+  padding-right: 13px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #292929;
 }
 
 .donation__namber-bank::before {
-    content: "";
-    position: absolute;
-    width: 35px;
-    height: 25px;
-    top: 10px;
-    left: 12px;
-    background-color: transparent;
-    background-image: url(../img/sprite@1x.png);
-    background-repeat: no-repeat;
-    background-position: -792px -17px;
-    background-size: 860px 80px;
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 25px;
+  top: 10px;
+  left: 12px;
+  background-color: transparent;
+  background-image: url(../img/sprite@1x.png);
+  background-repeat: no-repeat;
+  background-position: -792px -17px;
+  background-size: 860px 80px;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url(../img/sprite@2x.png);
-        height: 27px;
-        background-position: -790px -29px;
-    }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/sprite@2x.png);
+    height: 27px;
+    background-position: -790px -29px;
+  }
 }
