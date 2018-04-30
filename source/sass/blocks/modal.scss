@@ -1,6 +1,7 @@
 .modal-pet {
   display: flex;
   background-color: #fafafa;
+
   width: 970px;
   min-height: 470px;
   border-radius: 10px;
@@ -11,6 +12,10 @@
   margin-top: -235px;
   margin-left: -485px;
   z-index: 9999;
+
+  picture {
+    flex-shrink: 0;
+  }
 }
 
 .modal-pet__pic-dog {
